@@ -4,14 +4,16 @@ import '../../config/config.dart';
 
 class IntroductionRouter {
   static List<AutoRoute> route = [
-    AutoRoute(
+    CustomRoute(
       page: SplashRoute.page,
       path: '/',
       initial: true,
+      transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
-    AutoRoute(
+    CustomRoute(
       page: OnboardingRoute.page,
       path: '/onboarding',
+      transitionsBuilder: TransitionsBuilders.fadeIn,
     ),
   ];
 }
